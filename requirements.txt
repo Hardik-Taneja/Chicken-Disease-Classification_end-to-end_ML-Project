@@ -7,11 +7,11 @@ matplotlib
 seaborn
 python-box
 pyYAML
-tqdm
+tqdm # To create Progress Bar if code is taking Time
 ensure
 joblib
 types-PyYAML
 scipy
 Flask
 Flask-Cors
--e .
+-e . # To install src folder as local package
