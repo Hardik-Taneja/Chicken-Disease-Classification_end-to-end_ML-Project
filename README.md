@@ -27,11 +27,11 @@ https://github.com/Hardik-Taneja/Chicken-Disease-Classification_end-to-end_ML-Pr
 ### STEP 01- Create a conda environment after opening the repository
 
 ```bash
-conda create -n cnncls python=3.8 -y
+conda create -n myenv python=3.12 -y
 ```
 
 ```bash
-conda activate cnncls
+conda activate myenv
 ```
 
 
@@ -50,8 +50,11 @@ Now,
 ```bash
 open up you local host and port
 ```
-
-
+<br>
+Data validation step can be added after Data ingestion part : to check whether the format of input dataset is correct
+(Mostly added in Object Detection Project and NLP project)
+(In classification Projects, it is not required)
+<br><br>
 ### DVC cmd
 
 1. dvc init
