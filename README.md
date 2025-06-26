@@ -53,7 +53,8 @@ open up you local host and port
 <br>
 Data validation step can be added after Data ingestion part : to check whether the format of input dataset is correct
 (Mostly added in Object Detection Project and NLP project)
-<br>
+(In classification Projects, it is not required)
+<br><br>
 ### DVC cmd
 
 1. dvc init
