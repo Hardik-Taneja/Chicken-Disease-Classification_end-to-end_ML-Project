@@ -1,7 +1,7 @@
 from cnnClassifier.entity.config_entity import TrainingConfig
 import tensorflow as tf
 from pathlib import Path
-
+tf.config.run_functions_eagerly(True)
 
 class Training:
     def __init__(self, config: TrainingConfig):
@@ -9,7 +9,13 @@ class Training:
     
     def get_base_model(self):
         self.model = tf.keras.models.load_model(
-            self.config.updated_base_model_path
+        self.config.updated_base_model_path
+        )
+
+        self.model.compile(
+            optimizer=tf.keras.optimizers.Adam(learning_rate=self.config.params_learning_rate),
+            loss='categorical_crossentropy',
+            metrics=['accuracy']
         )
     
     def train_valid_generator(self):
