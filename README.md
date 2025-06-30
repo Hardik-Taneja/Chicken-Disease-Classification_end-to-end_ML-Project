@@ -1,7 +1,5 @@
 # Chicken-Disease-Classification_end-to-end_ML-Project
 
-# Chicken-Disease-Classification--Project
-
 
 ## Workflows
 
@@ -60,9 +58,13 @@ Data validation step can be added after Data ingestion part : to check whether t
 1. dvc init
 2. dvc repro
 3. dvc dag
-
-
-
+<br>
+Deployment can be done by:<br>
+Vercel<br>
+Netlify<br>
+AWS<br>
+Azure<br>
+<br>
 # AWS-CICD-Deployment-with-Github-Actions
 
 ## 1. Login to AWS console.
